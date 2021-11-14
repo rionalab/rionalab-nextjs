@@ -1,4 +1,5 @@
 import Router from 'next/router'
+import Head from 'next/head'
 
 interface IProps {
    params: any;
@@ -6,9 +7,12 @@ interface IProps {
 }
 
 const PostDetail = ({ params, post }: IProps) => {
-   console.log(params)
+
    return (
       <>
+         <Head>
+            <title>reading {post.title}</title>
+         </Head>
          <h3>{post.title}</h3>
          <p>{post.body}</p>
          <button onClick={()=> Router.back()}>back</button>
