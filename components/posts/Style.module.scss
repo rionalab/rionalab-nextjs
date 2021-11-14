@@ -1,0 +1,12 @@
+.postItem {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    a {
+        color: #555;
+        font-weight: 500;
+        &:hover {
+            color: #111;
+        }
+    }
+}
